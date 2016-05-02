@@ -57,11 +57,19 @@
 				842251BD1CD6F15100810A21 /* AppDelegate.swift */,
 				842251BF1CD6F15100810A21 /* ViewController.swift */,
 				842251C11CD6F15100810A21 /* Main.storyboard */,
+				842251CF1CD6F81C00810A21 /* Resource Files */,
+			);
+			path = "Virtual Tour";
+			sourceTree = "<group>";
+		};
+		842251CF1CD6F81C00810A21 /* Resource Files */ = {
+			isa = PBXGroup;
+			children = (
 				842251C41CD6F15100810A21 /* Assets.xcassets */,
 				842251C61CD6F15100810A21 /* LaunchScreen.storyboard */,
 				842251C91CD6F15100810A21 /* Info.plist */,
 			);
-			path = "Virtual Tour";
+			name = "Resource Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
