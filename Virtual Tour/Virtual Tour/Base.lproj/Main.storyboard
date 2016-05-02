@@ -8,7 +8,7 @@
         <!--VR Tour-->
         <scene sceneID="2kj-Fg-noH">
             <objects>
-                <viewController id="Yy9-XD-Q5x" customClass="VRTourViewController" customModule="Virtual_Tour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yy9-XD-Q5x" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SMl-1d-Sqo"/>
                         <viewControllerLayoutGuide type="bottom" id="CGN-mc-nPZ"/>
@@ -46,7 +46,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="z6r-9P-84u">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Cya-yg-Tom" customClass="TabBarController" customModule="Virtual_Tour" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Cya-yg-Tom" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="8MZ-J1-pPV">
                         <autoresizingMask key="autoresizingMask"/>
@@ -112,7 +112,7 @@
         <!--Map-->
         <scene sceneID="FF1-Yd-x5h">
             <objects>
-                <viewController id="vrv-Jp-7Xv" customClass="MapViewController" customModule="Virtual_Tour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vrv-Jp-7Xv" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zj0-ve-nEv"/>
                         <viewControllerLayoutGuide type="bottom" id="dJu-K8-fI9"/>
@@ -120,23 +120,9 @@
                     <view key="view" contentMode="scaleToFill" id="hMz-Kv-4my">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q9q-2r-KbQ">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Q9q-2r-KbQ" firstAttribute="top" secondItem="Zj0-ve-nEv" secondAttribute="bottom" id="MUm-TA-F85"/>
-                            <constraint firstItem="Q9q-2r-KbQ" firstAttribute="leading" secondItem="hMz-Kv-4my" secondAttribute="leading" id="UpK-is-C05"/>
-                            <constraint firstAttribute="trailing" secondItem="Q9q-2r-KbQ" secondAttribute="trailing" id="YIb-ye-az6"/>
-                            <constraint firstItem="Q9q-2r-KbQ" firstAttribute="bottom" secondItem="dJu-K8-fI9" secondAttribute="top" id="h7h-Is-AU7"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="KCq-dM-5ID"/>
-                    <connections>
-                        <outlet property="mapView" destination="Q9q-2r-KbQ" id="8iH-Zt-bkL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iE9-9Z-9cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,41 +150,31 @@
         <!--Profile-->
         <scene sceneID="REk-ge-5JZ">
             <objects>
-                <tableViewController id="JG6-bN-0p3" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nYA-5n-abk">
+                <tableViewController id="JG6-bN-0p3" customClass="ProfileTableViewController" customModule="Virtual_Tour" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nYA-5n-abk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="Efi-7Y-dF1">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kUT-QZ-rJB">
-                                        <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kUT-QZ-rJB" id="sMD-tf-3zN">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="meJ-kO-CzL">
-                                        <rect key="frame" x="0.0" y="108" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="meJ-kO-CzL" id="fZT-Ti-V4S">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="e96-Mc-fLI">
-                                        <rect key="frame" x="0.0" y="152" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e96-Mc-fLI" id="98Z-bQ-G5v">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="ccp-Ia-7Y1" style="IBUITableViewCellStyleDefault" id="kUT-QZ-rJB">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kUT-QZ-rJB" id="sMD-tf-3zN">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ccp-Ia-7Y1">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="JG6-bN-0p3" id="HNn-fN-5rI"/>
                             <outlet property="delegate" destination="JG6-bN-0p3" id="VTZ-AN-UFf"/>

@@ -59,7 +59,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             return nil
         }
         
-        //        Reuser the annotaion if possible
+        // Reuse the annotaion if possible
         var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
         
         if annotationView == nil {
@@ -67,7 +67,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             annotationView?.canShowCallout = true
         }
         
-        let leftIconView = UIImageView(frame: CGRectMake(0, 0, 53, 53))
+        let leftIconView = UIImageView(frame: CGRectMake(0, 0, 64, 64))
         
         leftIconView.image = UIImage(named: "lefticonview.jpg")
         
