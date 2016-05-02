@@ -16,6 +16,7 @@
 		845982D01CD718810038F5AE /* VRTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845982CF1CD718810038F5AE /* VRTourViewController.swift */; };
 		845982D41CD72DAF0038F5AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845982D31CD72DAF0038F5AE /* MapKit.framework */; };
 		845982D61CD72DCB0038F5AE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845982D51CD72DCB0038F5AE /* MapViewController.swift */; };
+		845982DC1CD754E80038F5AE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845982DB1CD754E80038F5AE /* ProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		845982CF1CD718810038F5AE /* VRTourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRTourViewController.swift; sourceTree = "<group>"; };
 		845982D31CD72DAF0038F5AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		845982D51CD72DCB0038F5AE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		845982DB1CD754E80038F5AE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				845982CB1CD70A630038F5AE /* TabBarController.swift */,
 				845982CF1CD718810038F5AE /* VRTourViewController.swift */,
 				845982D51CD72DCB0038F5AE /* MapViewController.swift */,
+				845982DB1CD754E80038F5AE /* ProfileTableViewController.swift */,
 				842251C11CD6F15100810A21 /* Main.storyboard */,
 				842251CF1CD6F81C00810A21 /* Resource Files */,
 			);
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845982DC1CD754E80038F5AE /* ProfileTableViewController.swift in Sources */,
 				845982CC1CD70A630038F5AE /* TabBarController.swift in Sources */,
 				845982CE1CD711900038F5AE /* RealEstate.swift in Sources */,
 				845982D01CD718810038F5AE /* VRTourViewController.swift in Sources */,

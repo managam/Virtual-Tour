@@ -14,9 +14,11 @@ class RealEstate {
     // attributes / properties
     var developer: String = "Eton Property"
     var name: String = "Reflections"
-    var price: String = "$395,000"
+    var price: String = "From $395,000 with Car Park & Storage"
     var type: String = "Apartement"
     var location: String = "108 Haines Street, North Melbourne, Vic 3051"
+    var phoneNumber: String = "tel://0413508866" 
+    var website: String = "http://www.reflectionsnorthmelbourne.com.au/"
     var image: [String] = ["frontview.jpg", "lounge.jpg", "livingroom.jpg", "garden.jpg", "kitchen.jpg", "bedroom.jpg", "bathroom.jpg", "sideview.jpg", "conservatory.jpg"]
     
     // constructor default
