@@ -12,6 +12,7 @@
 		842251C31CD6F15100810A21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842251C11CD6F15100810A21 /* Main.storyboard */; };
 		842251C51CD6F15100810A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842251C41CD6F15100810A21 /* Assets.xcassets */; };
 		842251C81CD6F15100810A21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842251C61CD6F15100810A21 /* LaunchScreen.storyboard */; };
+		845982CC1CD70A630038F5AE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845982CB1CD70A630038F5AE /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		842251C41CD6F15100810A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842251C71CD6F15100810A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842251C91CD6F15100810A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845982CB1CD70A630038F5AE /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				842251BD1CD6F15100810A21 /* AppDelegate.swift */,
 				842251BF1CD6F15100810A21 /* ViewController.swift */,
+				845982CB1CD70A630038F5AE /* TabBarController.swift */,
 				842251C11CD6F15100810A21 /* Main.storyboard */,
 				842251CF1CD6F81C00810A21 /* Resource Files */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845982CC1CD70A630038F5AE /* TabBarController.swift in Sources */,
 				842251C01CD6F15100810A21 /* ViewController.swift in Sources */,
 				842251BE1CD6F15100810A21 /* AppDelegate.swift in Sources */,
 			);
@@ -298,6 +302,7 @@
 				842251CE1CD6F15100810A21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

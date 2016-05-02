@@ -46,7 +46,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="z6r-9P-84u">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Cya-yg-Tom" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Cya-yg-Tom" customClass="TabBarController" customModule="Virtual_Tour" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="8MZ-J1-pPV">
                         <autoresizingMask key="autoresizingMask"/>
