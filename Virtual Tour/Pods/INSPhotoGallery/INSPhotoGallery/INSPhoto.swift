@@ -30,7 +30,7 @@ import UIKit
     func loadImageWithCompletionHandler(completion: (image: UIImage?, error: NSError?) -> ())
     func loadThumbnailImageWithCompletionHandler(completion: (image: UIImage?, error: NSError?) -> ())
     
-    var attributedTitle: NSAttributedString? { get }
+    var attributedTitle: NSAttributedString? { get set }
 }
 
 public class INSPhoto: INSPhotoViewable, Equatable {

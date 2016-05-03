@@ -10,14 +10,13 @@ import UIKit
 import INSPhotoGallery
 
 class GalleryViewController: UIViewController {
-
+    
     @IBOutlet weak var galleryCollectionView: UICollectionView!
     
-    var etonProperty = RealEstate()
+    let etonProperty = RealEstate()
     
     var photos: [INSPhotoViewable] = []
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,15 +36,25 @@ class GalleryViewController: UIViewController {
         }
         
         
-        for photo in photos {
+        for i in 0 ... photos.count - 1 {
+            
+            let photo = photos[i] as? INSPhoto
+            let caption = etonProperty.images["fullsize"]![i]
+            
+            photo!.attributedTitle = NSAttributedString(string: caption.substringWithRange(Range<String.Index>(start: caption.startIndex.advancedBy(4), end: caption.endIndex.advancedBy(-4))), attributes: [NSForegroundColorAttributeName : UIColor.whiteColor()])
+            
+        }
+        
+        
+        /* for photo in photos {
             
             if let photo = photo as? INSPhoto {
                 
-                photo.attributedTitle = NSAttributedString(string: "Caption text", attributes: [NSForegroundColorAttributeName : UIColor.whiteColor()])
+                photo.attributedTitle = NSAttributedString(string: "Caption", attributes: [NSForegroundColorAttributeName : UIColor.whiteColor()])
                 
             }
             
-        }
+        } */
         
     }
     
