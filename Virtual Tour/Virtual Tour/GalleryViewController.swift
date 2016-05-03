@@ -13,10 +13,89 @@ class GalleryViewController: UIViewController {
 
     @IBOutlet weak var galleryCollectionView: UICollectionView!
     
-    lazy var photos: [INSPhotoViewable] = {
-        return [
-            INSPhoto(image: UIImage(named: "fullSizeImage")!, thumbnailImage: UIImage(named: "thumbnailImage")!),
-            ]
-    }()
+    var etonProperty = RealEstate()
+    
+    var photos: [INSPhotoViewable] = []
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        galleryCollectionView.delegate = self
+        galleryCollectionView.dataSource = self
+        
+        for i in 0 ... 8 {
+            
+            photos.append (
+                INSPhoto(image: UIImage(named: etonProperty.images["fullsize"]![i])!, thumbnailImage: UIImage(named: etonProperty.images["thumbnail"]![i])!)
+            )
+            
+            // print(etonProperty.images["fullsize"]![i])
+            // print(etonProperty.images["thumbnail"]![i])
+            // print(photos)
+            
+        }
+        
+        
+        for photo in photos {
+            
+            if let photo = photo as? INSPhoto {
+                
+                photo.attributedTitle = NSAttributedString(string: "Caption text", attributes: [NSForegroundColorAttributeName : UIColor.whiteColor()])
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+
+
+
+
+extension GalleryViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("GalleryCollectionViewCell", forIndexPath: indexPath) as! GalleryCollectionViewCell
+        
+        cell.populateWithPhoto(photos[indexPath.row])
+        
+        return cell
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return photos.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        let cell = galleryCollectionView.cellForItemAtIndexPath(indexPath) as! GalleryCollectionViewCell
+        
+        let currentPhoto = photos[indexPath.row]
+        
+        let galleryPreview = INSPhotosViewController(photos: photos, initialPhoto: currentPhoto, referenceView: cell)
+        
+        galleryPreview.referenceViewForPhotoWhenDismissingHandler = {
+            [weak self] photo in
+            
+            if let index = self?.photos.indexOf({$0 === photo}) {
+                
+                let indexPath = NSIndexPath(forItem: index, inSection: 0)
+                
+                return self!.galleryCollectionView.cellForItemAtIndexPath(indexPath) as! GalleryCollectionViewCell
+            }
+            
+            return nil
+            
+        }
+        
+        presentViewController(galleryPreview, animated: true, completion: nil)
+        
+    }
+    
     
 }

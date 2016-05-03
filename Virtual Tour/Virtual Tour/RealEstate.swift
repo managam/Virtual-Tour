@@ -21,7 +21,7 @@ class RealEstate {
     var website: String = "http://www.reflectionsnorthmelbourne.com.au/"
     var images: [ String: [String]] = [
         
-        "Fullsize": [
+        "fullsize": [
             "fullFrontview.jpg",
             "fullLounge.jpg",
             "fullLivingroom.jpg",
@@ -33,7 +33,7 @@ class RealEstate {
             "fullConservatory.jpg"
         ],
         
-        "Thumbnail" : [
+        "thumbnail" : [
             "thumbFrontview.jpg",
             "thumbLounge.jpg",
             "thumbLivingroom.jpg",
