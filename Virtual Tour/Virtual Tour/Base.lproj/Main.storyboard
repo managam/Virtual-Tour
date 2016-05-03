@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--VR Tour-->
@@ -53,61 +54,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="U4h-BE-wmY" kind="relationship" relationship="viewControllers" id="F9J-Y9-EFc"/>
-                        <segue destination="yFU-9t-ezG" kind="relationship" relationship="viewControllers" id="PnC-Kn-Kyf"/>
-                        <segue destination="TpB-hz-Id2" kind="relationship" relationship="viewControllers" id="NXE-w3-o9h"/>
-                        <segue destination="75a-dn-kWJ" kind="relationship" relationship="viewControllers" id="ney-as-dN7"/>
+                        <segue destination="U4h-BE-wmY" kind="relationship" relationship="viewControllers" id="iQh-ud-UNJ"/>
+                        <segue destination="ffN-cP-RTF" kind="relationship" relationship="viewControllers" id="Fs6-rV-89G"/>
+                        <segue destination="TpB-hz-Id2" kind="relationship" relationship="viewControllers" id="1bp-pf-UhG"/>
+                        <segue destination="75a-dn-kWJ" kind="relationship" relationship="viewControllers" id="oY8-2T-7D0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lS2-aw-I6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-311" y="909"/>
-        </scene>
-        <!--Gallery-->
-        <scene sceneID="Fu0-T2-qKt">
-            <objects>
-                <tableViewController id="VDh-Cg-6Si" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AFN-ys-Olj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9BS-ez-Mmq">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9BS-ez-Mmq" id="U3w-lL-6N9">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="VDh-Cg-6Si" id="aNG-jb-q71"/>
-                            <outlet property="delegate" destination="VDh-Cg-6Si" id="skL-fn-gup"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Gallery" id="tKP-BZ-gCO"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NfW-DD-QaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1966" y="1517"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="YWR-ly-cpi">
-            <objects>
-                <navigationController id="yFU-9t-ezG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="gallery" id="Pcf-L4-RCj"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yQk-MC-Tak">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="VDh-Cg-6Si" kind="relationship" relationship="rootViewController" id="OFY-xq-zFp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbw-xi-KyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1966" y="2177"/>
         </scene>
         <!--Map-->
         <scene sceneID="FF1-Yd-x5h">
@@ -218,6 +173,89 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDN-hJ-A4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Gallery-->
+        <scene sceneID="3Oa-FJ-Zqf">
+            <objects>
+                <viewController id="HxM-Wk-3DV" customClass="GalleryViewController" customModule="Virtual_Tour" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5G6-aL-A3Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="sfS-cf-QPK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6g2-yu-M54">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ceg-Nu-XZ4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="595"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rkd-Hy-sTU">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="t80-La-CB6" customClass="GalleryCollectionViewCell" customModule="Virtual_Tour" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GdK-uL-Wbr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="GdK-uL-Wbr" firstAttribute="leading" secondItem="t80-La-CB6" secondAttribute="leading" id="WNZ-FB-p0I"/>
+                                            <constraint firstAttribute="bottom" secondItem="GdK-uL-Wbr" secondAttribute="bottom" id="b7p-GS-S13"/>
+                                            <constraint firstAttribute="trailing" secondItem="GdK-uL-Wbr" secondAttribute="trailing" id="caV-KO-ci3"/>
+                                            <constraint firstItem="GdK-uL-Wbr" firstAttribute="top" secondItem="t80-La-CB6" secondAttribute="top" id="fO7-Uy-8z1"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageGallery" destination="GdK-uL-Wbr" id="Kt7-FT-r5N"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ceg-Nu-XZ4" secondAttribute="trailing" id="MVV-8i-daY"/>
+                            <constraint firstItem="ceg-Nu-XZ4" firstAttribute="top" secondItem="6g2-yu-M54" secondAttribute="top" id="T64-4h-8WP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ceg-Nu-XZ4" secondAttribute="bottom" constant="5" id="YI3-qq-0jW"/>
+                            <constraint firstItem="ceg-Nu-XZ4" firstAttribute="leading" secondItem="6g2-yu-M54" secondAttribute="leading" id="m9L-Ws-8qC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gallery" id="chN-VS-qRA"/>
+                    <connections>
+                        <outlet property="galleryCollectionView" destination="ceg-Nu-XZ4" id="RqJ-Fx-oDm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Hb-W7-v8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2682" y="2261"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L4M-sR-Nmz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ffN-cP-RTF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="gallery" id="bRD-kw-cbn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YW7-2d-1vS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HxM-Wk-3DV" kind="relationship" relationship="rootViewController" id="a4H-du-zhm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6p2-aL-HoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870" y="909"/>
         </scene>
     </scenes>
     <resources>
