@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--VR Tour-->
+        <!--Virtual Tour-->
         <scene sceneID="2kj-Fg-noH">
             <objects>
-                <viewController id="Yy9-XD-Q5x" customClass="VRTourViewController" customModule="Virtual_Tour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yy9-XD-Q5x" customClass="VirtualTourViewController" customModule="Virtual_Tour" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SMl-1d-Sqo"/>
                         <viewControllerLayoutGuide type="bottom" id="CGN-mc-nPZ"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="VR Tour" id="ptA-cl-g5X"/>
+                    <navigationItem key="navigationItem" title="Virtual Tour" id="ptA-cl-g5X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqY-3m-NE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

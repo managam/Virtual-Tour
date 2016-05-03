@@ -1,15 +1,14 @@
 //
-//  VRTourViewController.swift
+//  VirtualTourViewController.swift
 //  Virtual Tour
 //
-//  Created by Admin on 5/2/16.
+//  Created by Admin on 5/3/16.
 //  Copyright © 2016 Morra. All rights reserved.
 //
 
 import UIKit
 
-class VRTourViewController: UIViewController {
-    
+class VirtualTourViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
