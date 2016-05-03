@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import INSPhotoGallery
 
 class GalleryViewController: UIViewController {
 
     @IBOutlet weak var galleryCollectionView: UICollectionView!
+    
+    lazy var photos: [INSPhotoViewable] = {
+        return [
+            INSPhoto(image: UIImage(named: "fullSizeImage")!, thumbnailImage: UIImage(named: "thumbnailImage")!),
+            ]
+    }()
     
 }
