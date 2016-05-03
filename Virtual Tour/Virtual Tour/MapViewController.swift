@@ -49,7 +49,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
     }
     
-    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         

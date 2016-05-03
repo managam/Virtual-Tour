@@ -9,5 +9,14 @@
 import UIKit
 
 class VRTourViewController: UIViewController {
-
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
 }

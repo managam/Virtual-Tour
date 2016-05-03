@@ -49,6 +49,10 @@ class GalleryViewController: UIViewController {
         
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
 }
 
 

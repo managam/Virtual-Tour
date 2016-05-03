@@ -26,6 +26,9 @@ class ProfileTableViewController: UITableViewController {
         
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return sectionTiles.count

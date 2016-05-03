@@ -85,7 +85,6 @@
 		842251BC1CD6F15100810A21 /* Virtual Tour */ = {
 			isa = PBXGroup;
 			children = (
-				842251BD1CD6F15100810A21 /* AppDelegate.swift */,
 				845982CD1CD711900038F5AE /* RealEstate.swift */,
 				845982CB1CD70A630038F5AE /* TabBarController.swift */,
 				845982CF1CD718810038F5AE /* VRTourViewController.swift */,
@@ -102,6 +101,7 @@
 		842251CF1CD6F81C00810A21 /* Supported Files */ = {
 			isa = PBXGroup;
 			children = (
+				842251BD1CD6F15100810A21 /* AppDelegate.swift */,
 				842251C41CD6F15100810A21 /* Assets.xcassets */,
 				842251C61CD6F15100810A21 /* LaunchScreen.storyboard */,
 				842251C91CD6F15100810A21 /* Info.plist */,

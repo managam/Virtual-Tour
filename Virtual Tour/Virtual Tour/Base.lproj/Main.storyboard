@@ -203,18 +203,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GdK-uL-Wbr">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GdK-uL-Wbr">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <constraints>
-                                            <constraint firstItem="GdK-uL-Wbr" firstAttribute="leading" secondItem="t80-La-CB6" secondAttribute="leading" id="WNZ-FB-p0I"/>
-                                            <constraint firstAttribute="bottom" secondItem="GdK-uL-Wbr" secondAttribute="bottom" id="b7p-GS-S13"/>
-                                            <constraint firstAttribute="trailing" secondItem="GdK-uL-Wbr" secondAttribute="trailing" id="caV-KO-ci3"/>
-                                            <constraint firstItem="GdK-uL-Wbr" firstAttribute="top" secondItem="t80-La-CB6" secondAttribute="top" id="fO7-Uy-8z1"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="imageGallery" destination="GdK-uL-Wbr" id="Kt7-FT-r5N"/>
                                         </connections>

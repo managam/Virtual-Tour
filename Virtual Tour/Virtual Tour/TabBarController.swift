@@ -10,6 +10,9 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
     
     override func viewWillLayoutSubviews() {
         
@@ -19,5 +22,5 @@ class TabBarController: UITabBarController {
         self.tabBar.frame = tabFrame
         
     }
-    
+
 }
