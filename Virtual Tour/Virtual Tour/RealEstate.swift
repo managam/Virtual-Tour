@@ -19,7 +19,34 @@ class RealEstate {
     var location: String = "108 Haines Street, North Melbourne, Vic 3051"
     var phoneNumber: String = "tel://0413508866" 
     var website: String = "http://www.reflectionsnorthmelbourne.com.au/"
-    var image: [String] = ["frontview.jpg", "lounge.jpg", "livingroom.jpg", "garden.jpg", "kitchen.jpg", "bedroom.jpg", "bathroom.jpg", "sideview.jpg", "conservatory.jpg"]
+    var images: [ String: [String]] = [
+        
+        "Fullsize": [
+            "fullFrontview.jpg",
+            "fullLounge.jpg",
+            "fullLivingroom.jpg",
+            "fullGarden.jpg",
+            "fullKitchen.jpg",
+            "fullBedroom.jpg",
+            "fullBathroom.jpg",
+            "fullSideview.jpg",
+            "fullConservatory.jpg"
+        ],
+        
+        "Thumbnail" : [
+            "thumbFrontview.jpg",
+            "thumbLounge.jpg",
+            "thumbLivingroom.jpg",
+            "thumbGarden.jpg",
+            "thumbKitchen.jpg",
+            "thumbBedroom.jpg",
+            "thumbBathroom.jpg",
+            "thumbSideview.jpg",
+            "thumbConservatory.jpg"
+        ]
+        
+    ]
+    
     
     // constructor default
     /* init(developer: String, name: String, description: String, price: String, type: String, location: String, image: [String]) {

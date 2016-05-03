@@ -94,19 +94,19 @@
 				8444F8F81CD8537F00012898 /* GalleryViewController.swift */,
 				8444F8FA1CD853B800012898 /* GalleryCollectionViewCell.swift */,
 				842251C11CD6F15100810A21 /* Main.storyboard */,
-				842251CF1CD6F81C00810A21 /* Resource Files */,
+				842251CF1CD6F81C00810A21 /* Supported Files */,
 			);
 			path = "Virtual Tour";
 			sourceTree = "<group>";
 		};
-		842251CF1CD6F81C00810A21 /* Resource Files */ = {
+		842251CF1CD6F81C00810A21 /* Supported Files */ = {
 			isa = PBXGroup;
 			children = (
 				842251C41CD6F15100810A21 /* Assets.xcassets */,
 				842251C61CD6F15100810A21 /* LaunchScreen.storyboard */,
 				842251C91CD6F15100810A21 /* Info.plist */,
 			);
-			name = "Resource Files";
+			name = "Supported Files";
 			sourceTree = "<group>";
 		};
 		D15FE63A12E2C1547E9AA5EF /* Pods */ = {
