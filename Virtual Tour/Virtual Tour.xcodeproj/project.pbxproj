@@ -15,7 +15,7 @@
 		842251C81CD6F15100810A21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842251C61CD6F15100810A21 /* LaunchScreen.storyboard */; };
 		8444F8F91CD8537F00012898 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444F8F81CD8537F00012898 /* GalleryViewController.swift */; };
 		8444F8FB1CD853B800012898 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444F8FA1CD853B800012898 /* GalleryCollectionViewCell.swift */; };
-		8444F8FD1CD87F7A00012898 /* VirtualTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444F8FC1CD87F7A00012898 /* VirtualTourViewController.swift */; };
+		8444F8FD1CD87F7A00012898 /* VRTourGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444F8FC1CD87F7A00012898 /* VRTourGLKViewController.swift */; };
 		845982CC1CD70A630038F5AE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845982CB1CD70A630038F5AE /* TabBarController.swift */; };
 		845982CE1CD711900038F5AE /* RealEstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845982CD1CD711900038F5AE /* RealEstate.swift */; };
 		845982D41CD72DAF0038F5AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845982D31CD72DAF0038F5AE /* MapKit.framework */; };
@@ -36,7 +36,7 @@
 		842251C91CD6F15100810A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8444F8F81CD8537F00012898 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		8444F8FA1CD853B800012898 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
-		8444F8FC1CD87F7A00012898 /* VirtualTourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualTourViewController.swift; sourceTree = "<group>"; };
+		8444F8FC1CD87F7A00012898 /* VRTourGLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRTourGLKViewController.swift; sourceTree = "<group>"; };
 		845982CB1CD70A630038F5AE /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		845982CD1CD711900038F5AE /* RealEstate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstate.swift; sourceTree = "<group>"; };
 		845982D31CD72DAF0038F5AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -101,7 +101,7 @@
 			children = (
 				845982CD1CD711900038F5AE /* RealEstate.swift */,
 				845982CB1CD70A630038F5AE /* TabBarController.swift */,
-				8444F8FC1CD87F7A00012898 /* VirtualTourViewController.swift */,
+				8444F8FC1CD87F7A00012898 /* VRTourGLKViewController.swift */,
 				845982D51CD72DCB0038F5AE /* MapViewController.swift */,
 				845982DB1CD754E80038F5AE /* ProfileTableViewController.swift */,
 				8444F8F81CD8537F00012898 /* GalleryViewController.swift */,
@@ -263,7 +263,7 @@
 			files = (
 				845982DC1CD754E80038F5AE /* ProfileTableViewController.swift in Sources */,
 				8444F8FB1CD853B800012898 /* GalleryCollectionViewCell.swift in Sources */,
-				8444F8FD1CD87F7A00012898 /* VirtualTourViewController.swift in Sources */,
+				8444F8FD1CD87F7A00012898 /* VRTourGLKViewController.swift in Sources */,
 				8444F8F91CD8537F00012898 /* GalleryViewController.swift in Sources */,
 				845982CC1CD70A630038F5AE /* TabBarController.swift in Sources */,
 				845982CE1CD711900038F5AE /* RealEstate.swift in Sources */,

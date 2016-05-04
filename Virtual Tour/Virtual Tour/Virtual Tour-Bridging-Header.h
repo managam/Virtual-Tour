@@ -7,7 +7,6 @@
 //
 
 #ifndef Virtual_Tour_Bridging_Header_h
-#define Virtual_Tour_Bridging_Header_h
 
 #import "PanoramaView.h"
 

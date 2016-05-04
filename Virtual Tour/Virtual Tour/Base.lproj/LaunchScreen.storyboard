@@ -18,20 +18,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Tour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCH-gW-xGd">
-                                <rect key="frame" x="223" y="289" width="154" height="21"/>
+                                <rect key="frame" x="185" y="289" width="230" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="154" id="aQq-VP-zfv"/>
+                                    <constraint firstAttribute="width" constant="230" id="2YT-fW-XO2"/>
+                                    <constraint firstAttribute="height" constant="40" id="6b7-7l-Mof"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2016 Managam Silalahi. All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="61Q-2B-9CG">
+                                <rect key="frame" x="0.0" y="559" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pCH-gW-xGd" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="269" id="QHF-Tp-RBg"/>
-                            <constraint firstItem="pCH-gW-xGd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="YjW-yW-pQM"/>
-                            <constraint firstItem="pCH-gW-xGd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uTn-XN-3rF"/>
+                            <constraint firstItem="pCH-gW-xGd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7W0-JO-EVu"/>
+                            <constraint firstAttribute="bottom" secondItem="61Q-2B-9CG" secondAttribute="bottom" constant="20" symbolic="YES" id="GOz-cD-teR"/>
+                            <constraint firstItem="pCH-gW-xGd" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="269" id="Jcc-01-4Z3"/>
+                            <constraint firstItem="61Q-2B-9CG" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="PKQ-VW-lBD"/>
+                            <constraint firstItem="pCH-gW-xGd" firstAttribute="centerX" secondItem="61Q-2B-9CG" secondAttribute="centerX" id="QjU-xQ-Mfb"/>
                         </constraints>
                     </view>
                 </viewController>
