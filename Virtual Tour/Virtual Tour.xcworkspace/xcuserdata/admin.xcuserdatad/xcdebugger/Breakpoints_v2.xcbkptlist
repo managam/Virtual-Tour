@@ -15,6 +15,38 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "INSPhotoGallery.INSPhoto.__deallocating_deinit"
+                  moduleName = "INSPhotoGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/Erawan/IOS/Managam/Github%20Repo/iOS%20Project/Virtual-Tour/Virtual%20Tour/Pods/INSPhotoGallery/INSPhotoGallery/INSPhoto.swift"
+                  timestampString = "484052319.056369"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "INSPhotoGallery.INSPhoto.deinit"
+                  moduleName = "INSPhotoGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/Erawan/IOS/Managam/Github%20Repo/iOS%20Project/Virtual-Tour/Virtual%20Tour/Pods/INSPhotoGallery/INSPhotoGallery/INSPhoto.swift"
+                  timestampString = "484052319.056672"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
