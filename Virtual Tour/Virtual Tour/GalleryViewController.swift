@@ -41,7 +41,9 @@ class GalleryViewController: UIViewController {
             let photo = photos[i] as? INSPhoto
             let caption = etonProperty.images["fullsize"]![i]
             
-            photo!.attributedTitle = NSAttributedString(string: caption.substringWithRange(Range<String.Index>(start: caption.startIndex.advancedBy(4), end: caption.endIndex.advancedBy(-4))), attributes: [NSForegroundColorAttributeName : UIColor.whiteColor()])
+            let range = caption.startIndex.advancedBy(4) ..< caption.endIndex.advancedBy(-4)
+            
+            photo!.attributedTitle = NSAttributedString(string: caption.substringWithRange(range), attributes: [NSForegroundColorAttributeName : UIColor.whiteColor()])
             
         }
         

@@ -20,7 +20,7 @@ class VRTourGLKViewController: GLKViewController {
         "livingroom.jpg",
         "kitchen.jpg",
         "bedroom.jpg",
-        "location.jpg",
+        // "location.jpg",
         ]
     
     
@@ -50,9 +50,11 @@ class VRTourGLKViewController: GLKViewController {
             panoramaView.orientToDevice = true     // Use motion sensors to pan
             panoramaView.pinchToZoom = false         // Use pinch gesture to zoom
             panoramaView.showTouches = false         // Show touches
-            
+
             self.view = panoramaView
-            title = panorama.substringWithRange(Range<String.Index>(start: panorama.startIndex.advancedBy(0), end: panorama.endIndex.advancedBy(-4))).capitalizedString
+            
+            let range = panorama.startIndex.advancedBy(0) ..< panorama.endIndex.advancedBy(-4)
+            title = panorama.substringWithRange(range).capitalizedString
             
         }
     }
