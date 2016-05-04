@@ -194,7 +194,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Gallery" id="chN-VS-qRA"/>
                     <connections>
-                        <outlet property="galleryCollectionView" destination="ceg-Nu-XZ4" id="RqJ-Fx-oDm"/>
+                        <outlet property="galleryCollectionView" destination="ceg-Nu-XZ4" id="cKX-KQ-mu5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Hb-W7-v8M" userLabel="First Responder" sceneMemberID="firstResponder"/>

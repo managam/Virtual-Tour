@@ -99,7 +99,7 @@ extension GalleryViewController: UICollectionViewDataSource, UICollectionViewDel
                 
                 let indexPath = NSIndexPath(forItem: index, inSection: 0)
                 
-                return self!.galleryCollectionView.cellForItemAtIndexPath(indexPath) as! GalleryCollectionViewCell
+                return self!.galleryCollectionView.cellForItemAtIndexPath(indexPath) as? GalleryCollectionViewCell
             }
             
             return nil
