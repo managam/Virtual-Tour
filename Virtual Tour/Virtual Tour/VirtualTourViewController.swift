@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import GLKit
 
-class VirtualTourViewController: UIViewController {
+class VirtualTourViewController: GLKViewController {
+    
+    var panoramaView = PanoramaView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
