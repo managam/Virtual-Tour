@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Override point for customization after application launch.
         // Change navigation bar appearance
-        UINavigationBar.appearance().barTintColor = UIColor(red: 223.0/255.0, green: 61.0/255.0, blue: 74.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 193.0/255.0, green: 39.0/255.0, blue: 45.0/255.0, alpha: 1.0)
         
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
@@ -32,11 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //        Change Bar Button Item Appearance
         UIBarButtonItem.appearance().tintColor = UIColor.whiteColor()
-        UIToolbar.appearance().barTintColor = UIColor(red: 223.0/255.0, green: 61.0/255.0, blue: 74.0/255.0, alpha: 1.0)
+        UIToolbar.appearance().barTintColor = UIColor(red: 193.0/255.0, green: 39.0/255.0, blue: 45.0/255.0, alpha: 1.0)
         
         // Changer Tab Bar Item Appearance
         UITabBar.appearance().tintColor = UIColor.whiteColor()
-        UITabBar.appearance().barTintColor = UIColor(red: 223.0/255.0, green: 61.0/255.0, blue: 74.0/255.0, alpha: 1.0)
+        UITabBar.appearance().barTintColor = UIColor(red: 193.0/255.0, green: 39.0/255.0, blue: 45.0/255.0, alpha: 1.0)
         //UITabBar.appearance().selectedImageTintColor = UIImage(named: "tabitem_selected")
         
         return true

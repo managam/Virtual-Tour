@@ -22,8 +22,8 @@ class GalleryCollectionViewCell: UICollectionViewCell {
                     photo.thumbnailImage = image
                 }
                 self.imageGallery.image = image
-                // self.imageGallery.layer.cornerRadius = self.imageGallery.frame.size.width / 2;
-                // self.imageGallery.clipsToBounds = true;
+                self.imageGallery.layer.cornerRadius = self.imageGallery.frame.size.width / 2;
+                self.imageGallery.clipsToBounds = true;
             }
         }
     }
