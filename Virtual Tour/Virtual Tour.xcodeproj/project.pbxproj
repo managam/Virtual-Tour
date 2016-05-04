@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		533BD922D036A630CB2F7B81 /* Pods_Virtual_Tour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07752DE6221D4E108771C22 /* Pods_Virtual_Tour.framework */; };
+		8414ED491CD9A18200902BE9 /* PanoramaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414ED481CD9A18200902BE9 /* PanoramaView.m */; };
 		842251BE1CD6F15100810A21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842251BD1CD6F15100810A21 /* AppDelegate.swift */; };
 		842251C31CD6F15100810A21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842251C11CD6F15100810A21 /* Main.storyboard */; };
 		842251C51CD6F15100810A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842251C41CD6F15100810A21 /* Assets.xcassets */; };
@@ -24,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		0755BC5F544DC40137BD2F17 /* Pods-Virtual Tour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Tour.release.xcconfig"; path = "Pods/Target Support Files/Pods-Virtual Tour/Pods-Virtual Tour.release.xcconfig"; sourceTree = "<group>"; };
+		8414ED461CD9A14D00902BE9 /* PanoramaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanoramaView.h; sourceTree = "<group>"; };
+		8414ED471CD9A18100902BE9 /* Virtual Tour-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Virtual Tour-Bridging-Header.h"; sourceTree = "<group>"; };
+		8414ED481CD9A18200902BE9 /* PanoramaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramaView.m; sourceTree = "<group>"; };
 		842251BA1CD6F15100810A21 /* Virtual Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842251BD1CD6F15100810A21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842251C21CD6F15100810A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +67,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8414ED451CD9A11800902BE9 /* Panorama */ = {
+			isa = PBXGroup;
+			children = (
+				8414ED461CD9A14D00902BE9 /* PanoramaView.h */,
+				8414ED481CD9A18200902BE9 /* PanoramaView.m */,
+				8414ED471CD9A18100902BE9 /* Virtual Tour-Bridging-Header.h */,
+			);
+			name = Panorama;
+			sourceTree = "<group>";
+		};
 		842251B11CD6F15100810A21 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +107,7 @@
 				8444F8F81CD8537F00012898 /* GalleryViewController.swift */,
 				8444F8FA1CD853B800012898 /* GalleryCollectionViewCell.swift */,
 				842251C11CD6F15100810A21 /* Main.storyboard */,
+				8414ED451CD9A11800902BE9 /* Panorama */,
 				842251CF1CD6F81C00810A21 /* Supported Files */,
 			);
 			path = "Virtual Tour";
@@ -252,6 +267,7 @@
 				8444F8F91CD8537F00012898 /* GalleryViewController.swift in Sources */,
 				845982CC1CD70A630038F5AE /* TabBarController.swift in Sources */,
 				845982CE1CD711900038F5AE /* RealEstate.swift in Sources */,
+				8414ED491CD9A18200902BE9 /* PanoramaView.m in Sources */,
 				845982D61CD72DCB0038F5AE /* MapViewController.swift in Sources */,
 				842251BE1CD6F15100810A21 /* AppDelegate.swift in Sources */,
 			);
@@ -369,6 +385,7 @@
 			baseConfigurationReference = D2CC66DD4B0716301FD45E6F /* Pods-Virtual Tour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Virtual Tour/Info.plist";
@@ -377,6 +394,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.morra.Virtual-Tour";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Virtual Tour/Virtual Tour-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -385,6 +404,7 @@
 			baseConfigurationReference = 0755BC5F544DC40137BD2F17 /* Pods-Virtual Tour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Virtual Tour/Info.plist";
@@ -393,6 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.morra.Virtual-Tour";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Virtual Tour/Virtual Tour-Bridging-Header.h";
 			};
 			name = Release;
 		};
