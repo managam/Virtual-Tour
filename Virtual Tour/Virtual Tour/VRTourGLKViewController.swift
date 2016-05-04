@@ -22,10 +22,10 @@ class VRTourGLKViewController: GLKViewController {
         
         if let panoramaView = self.panoramaView as PanoramaView! {
             
-            panoramaView.setImage(UIImage(named: "test.jpg")) // (4096×2048), 2048×1024, 1024×512, 512×256, 256×128
-            panoramaView.touchToPan = true          // Use touch input to pan
+            panoramaView.setImage(UIImage(named: "frontview.jpg")) // (4096×2048), 2048×1024, 1024×512, 512×256, 256×128
+            panoramaView.touchToPan = false          // Use touch input to pan
             panoramaView.orientToDevice = true     // Use motion sensors to pan
-            panoramaView.pinchToZoom = true         // Use pinch gesture to zoom
+            panoramaView.pinchToZoom = false         // Use pinch gesture to zoom
             panoramaView.showTouches = false         // Show touches
             self.view = panoramaView
             
