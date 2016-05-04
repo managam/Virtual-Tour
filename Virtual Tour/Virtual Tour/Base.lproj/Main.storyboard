@@ -235,7 +235,18 @@
                             <outlet property="delegate" destination="ol6-ol-5VM" id="BXk-dY-AE6"/>
                         </connections>
                     </glkView>
-                    <navigationItem key="navigationItem" title="Virtual Tour" id="RMN-Ce-Vds"/>
+                    <navigationItem key="navigationItem" title="Virtual Tour" id="RMN-Ce-Vds">
+                        <barButtonItem key="leftBarButtonItem" title="Previous" id="zG6-c4-xX6">
+                            <connections>
+                                <action selector="navigationPanorama:" destination="ol6-ol-5VM" id="RQA-hq-JFX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="dXz-AN-T0l">
+                            <connections>
+                                <action selector="navigationPanorama:" destination="ol6-ol-5VM" id="6xz-M5-ohQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M90-0z-CdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
