@@ -6,7 +6,6 @@
 //  Copyright © 2016 Morra. All rights reserved.
 //
 
-import UIKit
 import GLKit
 
 class VRTourGLKViewController: GLKViewController {
