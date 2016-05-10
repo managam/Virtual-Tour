@@ -17,18 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="XbJ-0j-Fdd">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Ht1-HI-74E"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="hW5-aY-ocM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.69411764705882351" green="0.070588235294117646" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="XbJ-0j-Fdd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9q6-IC-fB0"/>
-                            <constraint firstItem="XbJ-0j-Fdd" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="230" id="Fhc-UX-R5g"/>
-                            <constraint firstItem="XbJ-0j-Fdd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="acS-TS-6Fp"/>
+                            <constraint firstItem="hW5-aY-ocM" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="3c1-X9-AKd"/>
+                            <constraint firstAttribute="trailing" secondItem="hW5-aY-ocM" secondAttribute="trailing" id="ESu-Bb-k7D"/>
+                            <constraint firstItem="hW5-aY-ocM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ahf-ST-4Ld"/>
+                            <constraint firstItem="hW5-aY-ocM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="xkf-a0-tot"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchscreen" width="512" height="512"/>
+        <image name="Default" width="320" height="480"/>
     </resources>
 </document>
